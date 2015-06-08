@@ -151,8 +151,8 @@ def performPI(pname, text):
     needs  = {}
     values = {}
     
-    username = "42b0c892-6202-434a-af4d-967a9162f7a8"
-    password = "jIronB1IwWAF"
+    username = ""
+    password = ""
     url      = "https://gateway.watsonplatform.net/personality-insights/api/v2/profile"
     resp = requests.post(url, auth=(username, password),  headers = {"content-type": "text/plain"}, data=text)
     response = json.loads(resp.text)
